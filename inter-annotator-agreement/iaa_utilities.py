@@ -74,76 +74,16 @@ class IAASpreadsheetScheme(object):
             print()
             print()
 
-
-class IAAv1SpreadsheetScheme(IAASpreadsheetScheme):
-    CLOSED_CLASS_COLUMNS = ["system_input", "system_output", "system_task", "criterion_paraphrase", "op_form",
-                            "op_data_type", "op_instrument_type"]
-    OPEN_CLASS_COLUMNS = ["system_application_domain",
-                          "criterion_verbatim", "criterion_definition_verbatim", "criterion_definition_paraphrase",
-                          "op_question_prompt_verbatim", "op_question_prompt_paraphrase", "op_instrument_size",
-                          "op_response_values", "op_statistics", "criterion_external"]
-    ALL_DATA_COLUMNS = ["system_language", "system_input", "system_output", "system_task", "system_application_domain",
-                        "criterion_verbatim", "criterion_definition_verbatim", "criterion_paraphrase",
-                        "criterion_definition_paraphrase",
-                        "op_form", "op_question_prompt_verbatim", "op_question_prompt_paraphrase", "op_data_type",
-                        "op_instrument_type", "op_instrument_size", "op_response_values", "op_statistics"]
-    METADATA_COLUMNS = ["key",
-                        "annotator", "date_annotated", "double_checked_by", "date_double_checked", "annotation_comments", "exclude", "time_taken",
-                        "pub_venue", "pub_authors", "pub_year", "pub_url"]
-    ALL_COLUMNS = METADATA_COLUMNS + ALL_DATA_COLUMNS
-
-    HIERARCHY_DICT = {"Quantitative Criteria":
-                          ["Quantitative Criteria",
-                           "Input Surface Form Retention", "Input Content Retention"],
-                      "Quality of Surface Form":
-                          ["Quality of Surface Form",
-                           "Correctness of Surface Form", "Grammaticality", "Spelling Accuracy",
-                           "Quality of Expression ('well-written')", "Speech Quality",
-                           "Aesthetic Quality of Surface Form", "Appropriateness of form given context"],
-                      "Quality of Content":
-                          ["Quality of Content",
-                           "Correctness of Content", "Correctness relative to input",
-                           "Correctness relative to external reference",
-                           "Answerability from input",
-                           "Adequacy/Appropriateness", "Adequacy", "Adequacy Precision", "Adequacy Recall",
-                           "Appropriateness given context",
-                           "Quality of Content", "Informativeness", "Information - too much/not enough"],
-                      "Quality of text as a whole":
-                          ["Quality of text as a whole",
-                           "Coherence", "Cohesion", "Wellorderedness", "Referent Resolvability",
-                           "Complexity", "Complexity/Simplicity of Form", "Complexity/Simplicity of Content",
-                           "Technicality/requires subject expertise",
-                           "Naturalness",
-                           "Naturalness (likelihood in context/situation)", "Naturalness (form)",
-                           "Naturalness (content)",
-                           "Conversationality", "Ease of Communication",
-                           "Readability", "Fluency", "Clarity", "Understandability",
-                           "Nonredundancy", "Nonredundancy (form)", "Nonredundancy (content)",
-                           "Vagueness/Specificity", "Vagueness/Specificity (form)", "Vagueness/Specificity (content)",
-                           "Variedness", "Variedness (form)", "Variedness (content)",
-                           "Originality", "Originality (form)", "Originality (content)",
-                           "Intended Property", "Detectability of Text Property"],
-                      "Extralinguistic Quality":
-                          ["Extralinguistic Quality",
-                           "Criteria related to Listener/Reader", "Effect on listener",
-                           "Inferrability of Speaker Stance", "Inferrability of Speaker Trait", "Learnability",
-                           "Visualisability",
-                           "Humanlikeness", "Humanlikeness (form)", "Humanlikeness (content)",
-                           "Usefulness (nonspecific)", "Usefulness for task / information need",
-                           "Criteria related to system", "User Satisfaction", "Usability"]}
-
-
 class IAAv2SpreadsheetScheme(IAASpreadsheetScheme):
-    CLOSED_CLASS_COLUMNS = ["system_input", "system_output", "system_task", "criterion_paraphrase", "op_form",
+    CLOSED_CLASS_COLUMNS = ["system_input", "external_knowledge", "system_output", "system_task", "criterion_paraphrase", "op_form",
                             "op_data_type", "op_instrument_type"]
     OPEN_CLASS_COLUMNS = ["criterion_verbatim", "criterion_definition_verbatim",
                           "op_question_prompt_verbatim", "op_instrument_size",
                           "op_response_values", "op_statistics", "criterion_external", "cs_def", "cs_type"]
     ALL_DATA_COLUMNS = ["system_language", "system_input", "system_output", "system_task",
                         "op_response_values", "op_instrument_size", "op_instrument_type", "op_data_type", "op_form",
-                        "op_question_prompt_verbatim", "op_question_prompt_paraphrase", "op_statistics",
-                        "criterion_verbatim", "criterion_definition_verbatim", "criterion_paraphrase",
-                        "criterion_definition_paraphrase"]
+                        "op_question_prompt_verbatim", "op_statistics",
+                        "criterion_verbatim", "criterion_definition_verbatim", "criterion_paraphrase"]
     METADATA_COLUMNS = ["key",
                         "annotator", "date_annotated", "annotation_comments", "exclude", "time_taken",
                         "pub_venue", "pub_authors", "pub_year", "pub_url"]
