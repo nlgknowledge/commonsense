@@ -75,7 +75,7 @@ class IAASpreadsheetScheme(object):
             print()
 
 class IAAv2SpreadsheetScheme(IAASpreadsheetScheme):
-    CLOSED_CLASS_COLUMNS = ["system_input", "external_knowledge", "system_output", "system_task", "criterion_paraphrase", "op_form",
+    CLOSED_CLASS_COLUMNS = ["system_input", "external_knowledge", "system_output", "system_task", "knowledge_eval", "criterion_paraphrase", "op_form",
                             "op_data_type", "op_instrument_type"]
     OPEN_CLASS_COLUMNS = ["criterion_verbatim", "criterion_definition_verbatim",
                           "op_question_prompt_verbatim", "op_instrument_size",
