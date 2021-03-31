@@ -1,0 +1,186 @@
+Key,Annotator,Date,Misc comments,Exclusion flag (= TRUE if paper doesn't contain human eval),Venue,Authors,Year,"Definition of 
+commonsense 
+(copy paste 
+or none)","Type of commonsense (e.g. reasoning, etc.) or none if no further attribute is noted. ",Link,Language (full name),Input,External knowledge? ,Output,Task,Was the knowledge evaluated in the generated text?  ,List or Range of response values,Size of rating instrument,Type of scale or rating instrument,Data type of collected responses,Form of Response Elicitation,Verbatim question/prompt/etc,Statistics computed on response values,Verbatim Criterion Name,Verbatim Definition,Paraphrase of Criterion Name,"Criterion name for evaluation of external knowledge (if the external knowledge is not evaluated, leave blank)"
+,Definition Paper Labor,,,,Publication,,,,,,System,,,,,Operationalisation,,,,,,,,Criteria,,,
+Zhang2020,DG,04/01/21,,,ACL,Zhang et al.,2020,none,understanding how concepts are related,https://www.aclweb.org/anthology/2020.acl-main.184.pdf,English,"multiple (list all): text:sentence, text: subsentential unit of text","ConceptNet, GPT-2",text: sentence,dialogue turn generation,No,1-4,4,rank ordering,rank order,relative quality estimation,not given,Fleiss’ Kappa,Appropriateness,Appropriateness evaluates if the response is on-topic for the given utterance,--------------- 6. Appropriateness (content),
+Zhang2020,DG,04/01/21,,,ACL,Zhang et al.,2020,none,understanding how concepts are related,https://www.aclweb.org/anthology/2020.acl-main.184.pdf,English,"multiple (list all): text:sentence, text: subsentential unit of text","ConceptNet, GPT-2",text: sentence,dialogue turn generation,No,1-4,4,rank ordering,rank order,relative quality estimation,not given,Fleiss’ Kappa,informativeness,informativeness evaluates systems’ ability to provide new information instead of copying from the utterance,---------- 28/29. Information content of outputs,
+2020.emnlp-main.54,DG,12/01/21,,,EMNLP,Ji et al. ,2020,none,reasoning ability,https://www.aclweb.org/anthology/2020.emnlp-main.54.pdf,English,text: multiple sentences,ConceptNet,text: sentence,other (please specify): story ending generation,No,"win, tie and lose",3,"other (please specify): win, tie, lose",ratio-scale,relative quality estimation,not given,Fleiss’ Kappa,Fluency,"For fluency, we require the annotators to focus only on the grammatical correctness and readability of the generated results disregarding the input context","59. Multiple (list all): 22. Grammaticality, 44. Readability",
+2020.emnlp-main.54,DG,12/01/21,,,EMNLP,Ji et al. ,2020,none,reasoning ability,https://www.aclweb.org/anthology/2020.emnlp-main.54.pdf,English,text: multiple sentences,ConceptNet,text: sentence,other (please specify): story ending generation,No,"win, tie and lose",3,"other (please specify): win, tie, lose",ratio-scale,relative quality estimation,not given,Fleiss’ Kappa,Reasonability,"When evaluating reasonability, the annotators are required to assess whether the generated sentence is reasonable under the given context in each task.",------ 1. Goodness of outputs relative to input (content),
+2020.tacl-1.7,DG,12/01/21,,,TACL,Guan et al.,2020,none,causal relationship and temporal order of events,https://www.aclweb.org/anthology/2020.tacl-1.7.pdf,English,text: multiple sentences,"ConceptNet, ATOMIC",text: sentence,other (please specify): story ending generation,No,"win, tie and lose",3,"other (please specify): win, tie, lose",ratio-scale,relative quality estimation,What story has better grammar? ,percentage,Fluency,whether a story is natural and fluent,---------- 22. Grammaticality,
+2020.tacl-1.7,DG,12/01/21,,,TACL,Guan et al.,2020,none,causal relationship and temporal order of events,https://www.aclweb.org/anthology/2020.tacl-1.7.pdf,English,text: multiple sentences,"ConceptNet, ATOMIC",text: sentence,other (please specify): story ending generation,No,"win, tie and lose",3,"other (please specify): win, tie, lose",ratio-scale,relative quality estimation,What stiry has better logic? ,percentage,Logicality,logicality to indicate whether a story is coherent to the given beginning and reasonable in terms of causal and temporal dependencies in the context.,------ 1. Goodness of outputs relative to input (content),
+findings-emnlp.165,DG,12/01/21,,,Findings-EMNLP,Lin et al. ,2020,"Commonsense reasoning, the ability to make acceptable and logical assumptions about ordinary scenes in our daily life","1) relational reasoning with background commonsense knowledge, and 2) compositional generalization",https://www.aclweb.org/anthology/2020.findings-emnlp.165.pdf,English,text: subsentential units of text,ConceptNet,text: sentence,surface realisation (SLR to text),No,systems 1-6,6,rank ordering,rank order,relative quality estimation,not given,Kendall’s rank correlation coefficient,commonsense plausibility,none given,------ 1. Goodness of outputs relative to input (content),
+2020.acl-main.711,DG,12/01/21,,,ACL,Chakrabarty et al.,2020,none,sarcasm,https://www.aclweb.org/anthology/2020.acl-main.711.pdf,English,text: sentence,ConceptNet,text: variable-length,other (please specify): sarcasm generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,How creative are the utterances ?,"p-value, no test mentioned",Creativity,none given,------ 58. Text Property [PROPERTY] (specify): creativity,
+2020.acl-main.711,DG,12/01/21,,,ACL,Chakrabarty et al.,2020,none,sarcasm,https://www.aclweb.org/anthology/2020.acl-main.711.pdf,English,text: sentence,ConceptNet,text: variable-length,other (please specify): sarcasm generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,How sarcastic are the utterances?,"p-value, no test mentioned",Sarcasticness,none given,------ 58. Text Property [PROPERTY] (specify): sarcasticness,
+2020.acl-main.711,DG,12/01/21,,,ACL,Chakrabarty et al.,2020,none,sarcasm,https://www.aclweb.org/anthology/2020.acl-main.711.pdf,English,text: sentence,ConceptNet,text: variable-length,other (please specify): sarcasm generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,How funny are the sentences?,"p-value, no test mentioned",Humour,none given,------ 58. Text Property [PROPERTY] (specify): humour,
+2020.acl-main.711,DG,12/01/21,,,ACL,Chakrabarty et al.,2020,none,sarcasm,https://www.aclweb.org/anthology/2020.acl-main.711.pdf,English,text: sentence,ConceptNet,text: variable-length,other (please specify): sarcasm generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,How grammatical are the sentences?,"p-value, no test mentioned",Grammaticality,none given,---------- 22. Grammaticality,
+P19-1193,DG,12/01/21,,,ACL,Yang et al. ,2019,none,non-specific,https://www.aclweb.org/anthology/P19-1193.pdf,English,text: subsentential units of text,ConceptNet,text: documents,data-to-text generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,not given,Pearson correlation for inter-annotator agreement,Novelty,none given,------ 58. Text Property [PROPERTY] (specify): novelty,
+P19-1193,DG,12/01/21,,,ACL,Yang et al. ,2019,none,non-specific,https://www.aclweb.org/anthology/P19-1193.pdf,English,text: subsentential units of text,ConceptNet,text: documents,data-to-text generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,not given,Pearson correlation for inter-annotator agreement,Diversity,none given,------ 58. Text Property [PROPERTY] (specify): diversity,
+P19-1193,DG,12/01/21,,,ACL,Yang et al. ,2019,none,non-specific,https://www.aclweb.org/anthology/P19-1193.pdf,English,text: subsentential units of text,ConceptNet,text: documents,data-to-text generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,not given,Pearson correlation for inter-annotator agreement,Coherence,none given,---------- 9. Coherence,
+P19-1193,DG,12/01/21,,,ACL,Yang et al. ,2019,none,non-specific,https://www.aclweb.org/anthology/P19-1193.pdf,English,text: subsentential units of text,ConceptNet,text: documents,data-to-text generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,not given,Pearson correlation for inter-annotator agreement,Topic-consistency,none given,------ 1. Goodness of outputs relative to input (content),
+2020.acl-main.515,DG,12/01/21,,,ACL,Wu et al. ,2020,none ,facts,https://www.aclweb.org/anthology/2020.acl-main.515.pdf,"English, Chinese",text: dialogue,"ConceptNet, own graph",text: sentence,dialogue turn generation,No,"win, tie and lose",3,"other (please specify): win, tie, lose",ratio-scale,relative quality estimation,not given,sign test,Appropriateness,which mainly considers the fluency and the logical relevance.,--------------- 6a. Appropriateness (both form and content),
+2020.acl-main.515,DG,12/01/21,,,ACL,Wu et al. ,2020,none ,facts,https://www.aclweb.org/anthology/2020.acl-main.515.pdf,"English, Chinese",text: dialogue,"ConceptNet, own graph",text: sentence,dialogue turn generation,No,"win, tie and lose",3,"other (please specify): win, tie, lose",ratio-scale,relative quality estimation,not given,sign test,Informativeness,considers whether the model provides new information/knowledge or not.,---------- 28/29. Information content of outputs,
+P19-1470,DG,12/01/21,,,ACL,Bosselut et al.,2019,none,events,https://www.aclweb.org/anthology/P19-1470.pdf,English,raw/structured data,"ConceptNet, ATOMIC",text: subsentential units of text,end-to-end text generation,No,Plausible/not plausible,2,output classification,categorical,direct quality estimation,not given,Pitman’s test,Plausible,"Workers are asked to identify whether a model generation of ATOMIC commonsense adequately completes a plausible tuple of phrase subject, relation, and phrase object.",---------- 6b. Appropriateness,the paper uses plausibility as a criterion to evaluate commonsense knowledge produced by their model. 
+2020.emnlp-main.61,DG,19/01/21,,,EMNLP,Fang et al. ,2020,none,social commonsense,https://www.aclweb.org/anthology/2020.emnlp-main.61.pdf,English,visual,ATOMIC,text: variable-length,end-to-end text generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,Intention of agent's action: judge them in terms of relevance to the videp,standard deviation,Intention,the intention of agent to perform an action,--- 39d. Goodness of outputs relative to input,
+2020.emnlp-main.61,DG,19/01/21,,,EMNLP,Fang et al. ,2020,none,social commonsense,https://www.aclweb.org/anthology/2020.emnlp-main.61.pdf,English,visual,ATOMIC,text: variable-length,end-to-end text generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,Judge the effects with regards to their relevance to their video by providing a rating for each,standard deviation,Effect,the effect of the action,--- 39d. Goodness of outputs relative to input,
+2020.emnlp-main.61,DG,19/01/21,,,EMNLP,Fang et al. ,2020,none,social commonsense,https://www.aclweb.org/anthology/2020.emnlp-main.61.pdf,English,visual,ATOMIC,text: variable-length,end-to-end text generation,No,1-5,5,numerical rating scale,ordinal,direct quality estimation,"Read the attributes, understand them and judge their relevance with regards to their relevance to their video by providing a rating for each",standard deviation,Attribute,the attribute of the agent given the action,--- 39d. Goodness of outputs relative to input,
+D19-1270,MC,12/01/21,"Not 100% about input, Table 10",,EMNLP,Du et al.,2019,none,"If-Then commonsense reasoning, Event-Centered Commonsense
+Reasoning",https://www.aclweb.org/anthology/D19-1270.pdf,English,text: subsentential units of text,ATOMIC,text: subsentential units of text,content selection/determination,No,N/A,N/A,N/A,N/A,unclear,not given,none given,"Event-Centered Commonsense
+Reasoning",script event prediction and story ending generation/choosing.,blank,
+D19-1270,MC,12/01/21,,,EMNLP,Du et al.,2019,none,"If-Then commonsense reasoning, Event-Centered Commonsense Reasoning",https://www.aclweb.org/anthology/D19-1270.pdf,English,text: subsentential units of text,ATOMIC,text: subsentential units of text,content selection/determination,No,N/A,N/A,unclear,unclear,unclear,Experts are asked to vote for if a generation is coherent for each generated target,Avg scores,Coherence,a generation is coherent for each generated target,---------- 9. Coherence,
+D19-1270,MC,12/01/21,,,EMNLP,Du et al.,2019,none,"If-Then commonsense reasoning, Event-Centered Commonsense Reasoning",https://www.aclweb.org/anthology/D19-1270.pdf,English,text: subsentential units of text,ATOMIC,text: subsentential units of text,content selection/determination,No,1-5,5,rank ordering,rank order,relative quality estimation,Experts are asked to give a 1-5 score for the diversity of generations,Avg scores,Diversity,,---------- 12b. Text Property [Complexity/simplicity],
+D19-1270,MC,12/01/21,,,EMNLP,Du et al.,2019,none,"If-Then commonsense reasoning, Event-Centered Commonsense Reasoning",https://www.aclweb.org/anthology/D19-1270.pdf,English,text: subsentential units of text,ATOMIC,text: subsentential units of text,content selection/determination,No,N/A,N/A,unclear,unclear,unclear,Experts are asked to vote for if a generation is fluent for each generated target,Avg scores,Fluency, a generation is fluent for each generated target,---------- 21. Fluency,
+D18-1454,MC,12/01/21,"Input embedded context representation
+Not sure about external knowledge eval",,EMNLP,Bauer et al.,2018,none,"multi-hop relational commonsense information, Commonsense/Background Knowledge, grounded commonsense (background)",https://www.aclweb.org/anthology/D18-1454.pdf,English,deep linguistic representation (DLR),ConceptNet,text: subsentential units of text,question answering,No,N/A,N/A,N/A,N/A,relative quality estimation,not given,none given,Effectiveness,to check the effectiveness of our commonsense selection algorithm. ,--- 39c. Goodness of outputs in their own right,
+D18-1454,MC,12/01/21,,,EMNLP,Bauer et al.,2018,none,"multi-hop relational commonsense information, Commonsense/Background Knowledge, grounded commonsense (background)",https://www.aclweb.org/anthology/D18-1454.pdf,English,deep linguistic representation (DLR),ConceptNet,text: subsentential units of text,question answering,Yes,N/A,N/A,N/A,N/A,relative quality estimation,"was any external commonsense knowledge necessary for answering the
+question?",percentage,none given,,,External commonsense knowledge
+D18-1454,MC,12/01/21,,,EMNLP,Bauer et al.,2018,none,"multi-hop relational commonsense information, Commonsense/Background Knowledge, grounded commonsense (background)",https://www.aclweb.org/anthology/D18-1454.pdf,English,deep linguistic representation (DLR),ConceptNet,text: subsentential units of text,question answering,Yes,N/A,N/A,N/A,N/A,relative quality estimation,"were the commonsense relations
+provided by our algorithm relevant to the question?",percentage,none given,,,Commonsense relations
+2020.findings-emnlp.369,MC,12/01/21,,,EMNLP,Wang et al.,2020,none,general commonsense QA,https://www.aclweb.org/anthology/2020.findings-emnlp.369.pdf,English,text: sentence,"ConceptNet, GPT-2",raw/structured data,question answering,Yes, 1 (Not at all) to 5 (Very),5,rank ordering,rank order,relative quality estimation,How valid are the paths?,Avg scores,,,,Validiy
+2020.findings-emnlp.369,MC,12/01/21,,,EMNLP,Wang et al.,2020,none,general commonsense QA,https://www.aclweb.org/anthology/2020.findings-emnlp.369.pdf,English,text: sentence,"ConceptNet, GPT-2",raw/structured data,question answering,Yes, 2 (Not at all) to 5 (Very),5,rank ordering,rank order,relative quality estimation,How relevant are the paths to the question?,Avg scores,,,,Relevance
+N19-1421,MC,12/01/21,,,NAACL-HLT,Talmor et al.,2019,"Machine common sense, or the knowledge of and ability to reason about an open ended world,","commonsense question answering, commonsense knowledge, commonsense reasoning, ",https://www.aclweb.org/anthology/N19-1421.pdf,English,raw/structured data,ConceptNet,text: other (please specify): multiple-choice questions with corresponding relevant context (snippets) ,question answering,No,N/A,N/A,,,,,,Accuracy,,,
+2020.findings-emnlp.90,MC,12/01/21,Human evaluation is so unclear and messy,,EMNLP,Yang et al.,2020,none,commonsense reasoning,https://www.aclweb.org/anthology/2020.findings-emnlp.90.pdf,English,text: multiple sentences,GPT-2,text: sentence,question answering,Yes,"1 = Nonsensical 
+2 = Ambiguous or unanswerable 
+3 = Minor errors (e.g., grammar)
+4 = Coherent and Fluent ",4,numerical rating scale,,,,Fleiss’ Kappa,Fluency,,---------- 21. Fluency,
+2020.findings-emnlp.90,MC,12/01/21,,,EMNLP,Yang et al.,2020,none,commonsense reasoning,https://www.aclweb.org/anthology/2020.findings-emnlp.90.pdf,English,text: multiple sentences,GPT-2,text: sentence,question answering,Yes,N/A,N/A,,,,,Fleiss’ Kappa,Coherence,,---------- 9. Coherence,
+2020.findings-emnlp.90,MC,12/01/21,,,EMNLP,Yang et al.,2020,none,commonsense reasoning,https://www.aclweb.org/anthology/2020.findings-emnlp.90.pdf,English,text: multiple sentences,GPT-2,text: sentence,question answering,Yes,N/A,N/A,counting,count,evaluation through post-editing/annotation,,Fleiss’ Kappa,Answerability,,------ 16c. Correctness of outputs relative to input (both form and content),
+2020.findings-emnlp.90,MC,12/01/21,,,EMNLP,Yang et al.,2020,none,commonsense reasoning,https://www.aclweb.org/anthology/2020.findings-emnlp.90.pdf,English,text: multiple sentences,GPT-2,text: sentence,question answering,Yes,N/A,N/A,counting,count,evaluation through post-editing/annotation,,Fleiss’ Kappa,Common sense,,,
+D18-1283,MC,19/01/21,,,EMNLP,Yang et al.,2018,"commonsense evidence to justify the prediction of an action, 
+to explain an action","commonsense evidence, common ground, commonsense knowledge",https://www.aclweb.org/anthology/D18-1283.pdf,English,visual,,raw/structured data,feature-controlled generation,No,N/A,N/A,,,,,,Common ground,"""suppose its ground-truth action is A, the action predicted by
+the agent/machine is Am, and the action guessed
+by the human is Ah, the Common Ground is defined as: Am = Ah = A. Here we also enforce
+that the predicted action should be the same as
+the ground-truth action.""",,
+2020.emnlp-main.739,MC,19/01/21,,,EMNLP,Majumder et al.,2020,none,non-specific,https://www.aclweb.org/anthology/2020.emnlp-main.739.pdf,English,text: multiple sentences,"COMET, ATOMIC, GPT-2",text: dialogue,dialogue turn generation,Yes,"R1 is better, Both have similar fluency, R1 is worse",3,zero-centered rating scale,ratio-scale,relative quality estimation,Which comment is more fluent?,Cohen’s kappa,Fluency," Fluency measures
+whether the generated output is fluent (in English)",---------- 21. Fluency,
+2020.emnlp-main.739,MC,19/01/21,,,EMNLP,Majumder et al.,2020,none,non-specific,https://www.aclweb.org/anthology/2020.emnlp-main.739.pdf,English,text: multiple sentences,"COMET, ATOMIC, GPT-2",text: dialogue,dialogue turn generation,Yes,"R1 is more engaging, Both have similar engagement level, R1 is less engaging",3,zero-centered rating scale,ratio-scale,relative quality estimation,Which response do you think is more engaging/interesting?,Cohen’s kappa,Engagement,"Engagement measures whether the generated
+response is engaging or interesting",--------------- 11. Text Property [Complexity/simplicity (content)],
+2020.emnlp-main.739,MC,19/01/21,,,EMNLP,Majumder et al.,2020,none,non-specific,https://www.aclweb.org/anthology/2020.emnlp-main.739.pdf,English,text: multiple sentences,"COMET, ATOMIC, GPT-2",text: dialogue,dialogue turn generation,Yes,"R1 is better, Both have similar fluency, R1 is worse",3,zero-centered rating scale,ratio-scale,relative quality estimation,Which response do you think is more relevant to the history?,Cohen’s kappa,Relevance,"Relevance measures whether the generated output is
+relevant with respect to the dialog history. ",------ 16c. Correctness of outputs relative to input (both form and content),
+2020.emnlp-main.739,MC,19/01/21,,,EMNLP,Majumder et al.,2020,none,non-specific,https://www.aclweb.org/anthology/2020.emnlp-main.739.pdf,English,text: multiple sentences,"COMET, ATOMIC, GPT-2",text: dialogue,dialogue turn generation,Yes,"Yes, No, Uncertain",3,zero-centered rating scale,categorical,classification,Is this following knowledge about B relevant to the given dialogue history?,percentage,,,,persona grounding performance with expansions
+2020.semeval-1.39,MC,19/01/21,,,SemEval,Wang et al.,2020,none,daily common sense,https://www.aclweb.org/anthology/2020.semeval-1.39.pdf,English,other (please specify): multiple choices,"GPT-2, ConceptNet",text: subsentential units of text,content ordering/structuring,Yes,"0 The reason is not grammatically correct, or not comprehensible at all, or not related to the statement at all.
+1 The reason is just the negation of the statement or a simple paraphrase. Obviously, a better explanation can be made
+2 The reason is relevant and appropriate, though it may contain a few grammatical errors or unnecessary parts. Or like case 1, but it’s hard to write a proper reason.
+3 The reason is appropriate and is a solid explanation of why the statement does not make sense",4,,,,,,Common sense reasoning,"a participating system needs to generate the reason why it does
+not make sense.",,
+2020.semeval-1.39,MC,19/01/21,,,SemEval,Wang et al.,2020,none,daily common sense,https://www.aclweb.org/anthology/2020.semeval-1.39.pdf,English,other (please specify): multiple choices,"GPT-2, ConceptNet",text: subsentential units of text,content ordering/structuring,Yes,N/A,N/A,,,,,,Correctness,"system needs to choose the against-common-sense statement from two natural language statements of similar wordings,",--- 15b. Correctness of outputs in their own right,
+2020.semeval-1.39,MC,19/01/21,,,SemEval,Wang et al.,2020,none,daily common sense,https://www.aclweb.org/anthology/2020.semeval-1.39.pdf,English,other (please specify): multiple choices,"GPT-2, ConceptNet",text: subsentential units of text,content ordering/structuring,Yes,N/A,N/A,,,,,,Validity,"which requires a model to identify which one makes sense
+s to find the key reason from three provided options why a given
+nonsensical statement does not make sense",,
+D19-1509,MC,19/01/21,,,EMNLP,Qin et al.,2019,"counterfactual reasoning: the ability to predict causal changes in future events given a counterfactual condition applied to the original chain of events (Goodman, 1947; Bottou et al., 2013).",Counterfactual reasoning,https://www.aclweb.org/anthology/D19-1509.pdf,English,"text: other (please specify): 
+ a short story and a
+counterfactual context",GPT-2,"other (please specify):  a short story (left column) and a
+counterfactual context",feature-controlled generation,No,"(1) Does the rewritten ending keep in mind details of the original premise sentence? 
+(2) Is the plot of the rewritten ending relevant to the plot of the original ending? 
+(3) Does the rewritten ending respect the changes induced by the counterfactual sentence?",3,Likert scale,ordinal,(dis)agreement with quality statement,"(1) Does the rewritten ending keep in mind details of the original premise sentence? 
+(2) Is the plot of the rewritten ending relevant to the plot of the original ending? 
+(3) Does the rewritten ending respect the changes induced by the counterfactual sentence?",,Quality,,39. Quality of outputs,
+D19-1243,MC,19/01/21,,,EMNLP,Huang et. al,2019,none,Contextual Commonsense Reasoning,https://www.aclweb.org/anthology/D19-1243.pdf,English,"multiple (list all): multiple sentences (paragraph), Question-Answers, Reasoning type","GPT-2, Cosmos",other (please specify): classificated answers ,content selection/determination,No,,,,,,whether the paragraph is inappropriate or nonsensical,,,,,
+D19-1243,MC,19/01/21,,,EMNLP,Huang et. al,2019,none,Contextual Commonsense Reasoning,https://www.aclweb.org/anthology/D19-1243.pdf,English,"multiple (list all): multiple sentences (paragraph), Question-Answers, Reasoning type","GPT-2, Cosmos",other (please specify): classificated answers ,content selection/determination,No,,,,,,whether the question is nonsensical or not related to the paragraph,,,,,
+D19-1243,MC,19/01/21,,,EMNLP,Huang et. al,2019,none,Contextual Commonsense Reasoning,https://www.aclweb.org/anthology/D19-1243.pdf,English,"multiple (list all): multiple sentences (paragraph), Question-Answers, Reasoning type","GPT-2, Cosmos",other (please specify): classificated answers ,content selection/determination,No,,,,,,whether they can determine the most plausible correct answer,,,,,
+D19-1243,MC,19/01/21,,,EMNLP,Huang et. al,2019,none,Contextual Commonsense Reasoning,https://www.aclweb.org/anthology/D19-1243.pdf,English,"multiple (list all): multiple sentences (paragraph), Question-Answers, Reasoning type","GPT-2, Cosmos",other (please specify): classificated answers ,content selection/determination,No,,,,,,"if they can determine the correct answer, whether the answer requires commonsense knowledge",,,,,
+D19-1243,MC,19/01/21,,,EMNLP,Huang et. al,2019,none,"Contextual Commonsense Reasoning, everyday events ",https://www.aclweb.org/anthology/D19-1243.pdf,English,"multiple (list all): multiple sentences (paragraph), Question-Answers, Reasoning type","GPT-2, Cosmos",other (please specify): classificated answers ,content selection/determination,No,,,,,,"if they can determine the correct answer, whether the answer can
+be determined without looking at the paragraph",,,,,
+2020.acl-main.508,MC,19/01/26,A very nice paper; truly recommend for our research,,ACL,Zhang et al.,2020,none,"commonsense knowledge, commonsense reasoning, the property of entities, temporal knowledge, or spatial knowledge",https://www.aclweb.org/anthology/2020.acl-main.508.pdf,English,unclear (rare),ConceptNet,unclear (rare),question answering,No,,,output classification,categorical,evaluation through post-editing/annotation,,kappa coefficient,,"to select the knowledge type that can best
+describe the reason.",,knowledge types
+P19-1488,SM,19.01.2021,,,ACL,"Alona Sydorova,
+Nina Poerner, 
+Benjamin Roth",2019,none,non-specific,https://www.aclweb.org/anthology/P19-1488/,English,text: sentence,Yes,text: sentence,question answering,Yes,"definitely left, 
+rather left, 
+difficult to say, 
+rather right, 
+definitely right",600,rank ordering,rank order,relative quality estimation,not given,,,,--- 15b. Correctness of outputs in their own right,
+D19-1172,SM,19.01.2021,,,EMNLP-IJCNLP,"Jingjing Xu,
+ Yuechen Wang, 
+Duyu Tang, 
+Nan Duan, 
+Pengcheng Yang, 
+Qi Zeng, 
+Ming Zhou, 
+Xu Sun",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1172/,English,text: sentence,Yes,text: sentence,dialogue turn generation,Yes,,100,,,,,,,,,
+D19-1183,SM,19.01.2021,,,EMNLP-IJCNLP,"Igor Shalyminov, 
+Sungjin Lee, 
+Arash Eshghi, 
+Oliver Lemon",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1183/,English,text: sentence,Yes,text: sentence,dialogue turn generation,No,,,,,,,,,,,
+D19-1189,SM,19.01.2021,,,EMNLP-IJCNLP,"Qibin Chen, 
+Junyang Lin, 
+Yichang Zhang, 
+Ming Ding, 
+Yukuo Cen, 
+Hongxia Yang, 
+Jie Tang",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1189/,English,text: sentence,Yes,text: sentence,dialogue turn generation,Yes,"1,2,3",100,Likert scale,ordinal,(dis)agreement with quality statement,not given,Mean,consistency,None,---------- 9. Coherence,
+D19-1194,SM,19.01.2021,,,EMNLP-IJCNLP,"Yi-Lin Tuan, 
+Yun-Nung Chen, 
+Hung-yi Lee",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1194/,"Chinese, English",text: sentence,Yes,text: sentence,dialogue turn generation,Yes,"""win"",""tie"",""lose""",20,rank ordering,rank order,relative quality estimation,not given,Kappa,information,"""In- formation measures which output contains more correct information (in terms of knowledge words here) according to a given input message and a re- ferred response""",------ 16b. Correctness of outputs relative to input (content),
+D19-1194,SM,19.01.2021,,,EMNLP-IJCNLP,"Yi-Lin Tuan, 
+Yun-Nung Chen, 
+Hung-yi Lee",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1194/,"Chinese, English",text: sentence,Yes,text: sentence,dialogue turn generation,Yes,"""win"",""tie"",""lose""",20,rank ordering,rank order,relative quality estimation,not given,Kappa,fluency,"""Fluency measures which output is more proper as a response to a given input message""",---------- 21. Fluency,
+D19-1247,SM,19.01.2021,,,EMNLP-IJCNLP,"Cao Liu, 
+Kang Liu, 
+Shizhu He, 
+Zaiqing Nie, 
+Jun Zhao",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1247/,English,raw/structured data,Yes,text: sentence,question generation,Yes,"0,1,2,3,4,5",100,Likert scale,ordinal,(dis)agreement with quality statement,not given,Mean,naturalness,None,--------------- 35a. Naturalness (both form and content),
+D19-1255,SM,19.01.2021,,,EMNLP-IJCNLP,"Bin Bi, 
+Chen Wu, 
+Ming Yan, 
+Wei Wang, 
+Jiangnan Xia, 
+Chenliang Li",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1255/,English,text: multiple sentences,Yes,text: multiple sentences,question answering,Yes,"1,2,3,4,5",100,Likert scale,ordinal,(dis)agreement with quality statement,not given,,correctness,None,------ 17b. Correctness of outputs relative to external frame of reference (content),
+D19-1255,SM,19.01.2021,,,EMNLP-IJCNLP,"Bin Bi, 
+Chen Wu, 
+Ming Yan, 
+Wei Wang, 
+Jiangnan Xia, 
+Chenliang Li",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1255/,English,text: multiple sentences,Yes,text: multiple sentences,question answering,Yes,"1,2,3,4,5",100,Likert scale,ordinal,(dis)agreement with quality statement,not given,,grammaticality,None,---------- 22. Grammaticality,
+D19-1281,SM,19.01.2021,,,EMNLP-IJCNLP,"Tushar Khot, 
+Ashish Sabharwal, 
+Peter Clark",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1281/,English,text: multiple sentences,Yes,text: sentence,question answering,No,,,,,,,,,,,
+D19-1299,SM,12.01.2021,,,EMNLP-IJCNLP,"Shuang Chen, 
+Jinpeng Wang, 
+Xiaocheng Feng, 
+Feng Jiang, 
+Bing Qin,
+ Chin-Yew Lin",2019,none,non-specific,https://www.aclweb.org/anthology/D19-1299/,English,raw/structured data,Yes,text: multiple sentences,end-to-end text generation,Yes,N/A,50,text annotation,count,evaluation through post-editing/annotation,not given,Percision,accuracy,None,------ 16b. Correctness of outputs relative to input (content),
+N19-1126,SM,12.01.2021,,,NAACL,"Dinesh Raghu, 
+Nikhil Gupta, 
+Mausam",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1126/,Englsih,text: sentence,Yes,text: sentence,question answering,No,"0,1,2,3",3,Likert scale,ordinal,direct quality estimation,not given,Mean,grammatical correctness and fluency,None,--------------- 34. Naturalness (form),
+N19-1126,SM,12.01.2021,,,NAACL,"Dinesh Raghu, 
+Nikhil Gupta, 
+Mausam",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1126/,Englsih,text: sentence,Yes,text: sentence,question answering,No,"0,1,2,3",3,Likert scale,ordinal,direct quality estimation,not given,Mean,usefulness,None,---------- 28/29. Information content of outputs,
+N19-1238,SM,12.01.2021,,,NAACL,"Rik Koncel-Kedziorski, 
+Dhanush Bekal, 
+Yi Luan, 
+Mirella Lapata, 
+Hannaneh Hajishirzi",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1238/,Englsih,raw/structured data,No,text: multiple sentences,summarisation (text-to-text),Yes,,30,output classification,categorical,unclear,not given,Mean,informativeness,"""does the abstract relate to the provided title and make use of appropriate scientific terms?""",---------- 28/29. Information content of outputs,
+N19-1238,SM,12.01.2021,,,NAACL,"Rik Koncel-Kedziorski, 
+Dhanush Bekal, 
+Yi Luan, 
+Mirella Lapata, 
+Hannaneh Hajishirzi",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1238/,Englsih,raw/structured data,No,text: multiple sentences,summarisation (text-to-text),Yes,,30,output classification,categorical,unclear,not given,Mean,coherence,"""does the abstract have an introduction, state the prob- lem or task, describe a solution, and discuss eval- uations or results?""",--------------- 6. Appropriateness (content),
+N19-1238,SM,12.01.2021,,,NAACL,"Rik Koncel-Kedziorski, 
+Dhanush Bekal, 
+Yi Luan, 
+Mirella Lapata, 
+Hannaneh Hajishirzi",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1238/,Englsih,raw/structured data,No,text: multiple sentences,summarisation (text-to-text),Yes,,30,output classification,categorical,unclear,not given,Mean,grammar and fluency,"""is the abstract written 
+in well-formed 
+English?""",--------------- 34. Naturalness (form),
+N19-1238,SM,12.01.2021,,,NAACL,"Rik Koncel-Kedziorski, 
+Dhanush Bekal, 
+Yi Luan, 
+Mirella Lapata, 
+Hannaneh Hajishirzi",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1238/,Englsih,raw/structured data,No,text: multiple sentences,summarisation (text-to-text),Yes,"Best"", ""Worst""",50,output classification,categorical,unclear,not given,Mean,Best-Worst Scaling,None,------ 39j. Goodness of outputs relative to system use,
+N19-1301,SM,04.01.2021,,,NAACL,"Kun Xu, 
+Yuxuan Lai, 
+Yansong Feng, 
+Zhiguo Wang",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1301/,English,text: sentence,No,text: sentence,question answering,Yes,N/A,50,N/A,count,task performance measurements,not given,"Precision, Recall, F-score",,none given,--- 39d. Goodness of outputs relative to input,
+N19-1299,SM,04.01.2021,,,NAACL,"Yu Chen, 
+Lingfei Wu,
+Mohammed J. Zaki",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1299/,English,raw/structured data,Yes,text: sentence,question answering,Yes,N/A,100,N/A,count,task performance measurements,not given,none,Interpretability,"""mutual 
+interactions 
+between question 
+words and KB 
+aspects""",------ 42a. Goodness of outputs in their own right (both form and content),
+N19-1382,SM,04.01.2021,,,NAACL,"Siddhartha Arora, 
+Mitesh M. Khapra, 
+Harish G. Ramaswamy",2019,none,non-specific,https://www.aclweb.org/anthology/N19-1382/,English,text: documents,Yes,text: sentence,question answering,No,,,,,,,,None,None,--- 16. Correctness of outputs relative to input,
