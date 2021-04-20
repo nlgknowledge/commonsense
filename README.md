@@ -8,10 +8,11 @@ You can find a CEC FORM at the following link [The Commonsense Evaluation Card F
 
 ## Citing
 
-@inproceedings{clinciu-etal-2021-commonsense,
-    title = "It{'}s Commonsense, isn{'}t it? Demystifying Human Evaluations in Commonsense-Enhanced {NLG} Systems",
-    author = "Clinciu, Miruna-Adriana  and  Gkatzia, Dimitra  and   Mahamood, Saad",
-    booktitle = "Proceedings of the Workshop on Human Evaluation of NLP Systems (HumEval)",
-    year = "2021"
-}
+<html>
+@inproceedings{clinciu-etal-2021-commonsense, <br>
+    title = "It{'}s Commonsense, isn{'}t it? Demystifying Human Evaluations in Commonsense-Enhanced {NLG} Systems", <br>
+    author = "Clinciu, Miruna-Adriana  and  Gkatzia, Dimitra  and   Mahamood, Saad", <br>
+    booktitle = "Proceedings of the Workshop on Human Evaluation of NLP Systems (HumEval)", <br>
+    year = "2021" <br>
+} </html>
 
